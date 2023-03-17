@@ -42,4 +42,15 @@ public class User {
         this.createdAt = createdAt;
     }
 
+    public void update(String password, String email) {
+        this.password = password;
+        this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "User [id=" + id + ", username=" + username + ", password=" + password + ", email=" + email
+                + ", createdAt=" + createdAt + "]";
+    }
+
 }
